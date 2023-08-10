@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.movie-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.movie {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.movie.selected {
+  background-color: #333;
+  color: white;
+}
+
+.seat-selection {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.seat {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.seat.selected {
+  background-color: #333;
+  color: white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.summary {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 10px;
 }
